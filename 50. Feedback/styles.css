@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    background: rgb(26, 25, 25);
+}
+
+.panel-container {
+  background-color: #1d1c1c;
+  box-shadow: rgba(0, 0, 0, 0.3);
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 700px;
+  color: white;
+}
+
+.ratings-container {
+  display: flex;
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+}
+
+.ratings {
+  flex: 1;
+  padding: 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.ratings:hover, 
+.ratings.active{
+  border-radius: 4px;
+  background-color: #ccc;
+  transition: 1s ease;
+
+}
+
+.ratings .icon {
+  width: 40px;
+  font-size: 5rem;
+  margin-right: 10px;
+}
+
+.ratings small {
+  color: white;
+  display: inline-block;
+  margin: 10px 0 0 ;
+}
+
+.btn {
+  background: white;
+  color: black;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 30px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.btn.active {
+  transform: scale(0.98);
+}
+
+/* JavaSript */
+
+.heart {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
