@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: rgb(28, 28, 28);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.t-container {
+  background: rgb(19, 19, 19);
+  color: white;
+  padding: 5rem 8rem;
+  max-width: 800px;
+  position: relative;
+  box-shadow: 0 2px 4px 2px rgb(28, 28, 28);
+}
+
+.testimonial {
+  line-height: 25px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-avater{
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.user .user-info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.line {
+  background: crimson;
+  height: 4px;
+  width: 100%;
+  margin-top: 20px;
+  animation: animation 10s linear infinite;
+}
+
+@keyframes animation {
+  0% {
+    transform: scaleX(0);
+  }
+}
